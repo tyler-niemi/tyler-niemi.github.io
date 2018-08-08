@@ -1,0 +1,27 @@
+#shop{
+    background-repeat: repeat-x;    
+    height:121px;
+    width: 984px;
+    margin-left: 20px;
+    margin-top: 13px;
+}
+
+#shop .modal-button{    
+
+    line-height: 20px;
+    margin-top: 0px;
+    margin-left: 9px;
+    margin-right:0px;
+    display:inline-block;
+    position:relative;
+}
+
+#shop .modal-button a {
+    position:absolute;
+    bottom:10px;
+    right:55px;
+    color:#e6e6e6;
+    font-size: 20px;
+    text-decoration: none;
+    font-style: bold;
+}
