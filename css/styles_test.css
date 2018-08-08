@@ -1,0 +1,342 @@
+body {
+  background: url(../images/seattle_night.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.content {
+  font-family: 'Open Sans', sans-serif;
+  margin: 40px auto;
+  background: rgba(22,22,22, 0.5);
+  width: 100%;
+    max-width: 960px;
+  border-radius: 5px;
+  padding-bottom: 32px;
+  color: white;
+}
+
+table#training {
+    width: 100%;
+}
+
+.left {
+    float:right;
+
+}
+
+.right {
+    float: right;
+
+}
+
+.modal-button {
+    border: none;
+  padding: 0;
+  background: none;
+}
+
+
+
+#about p {
+    padding-left: 40px;
+}
+
+.modal-body p {
+    color: black;
+}
+
+.modal-content h3 {
+    color: black;
+}
+
+#training li{
+    padding-left: 40px;
+  }
+
+#portfolio, #desc
+{
+  text-align: center;
+}
+
+table.center {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#productDesc {
+  list-style-image:url(../images/action_add.png);
+  color: black;
+}
+
+#trips
+{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: #4286f4;
+    font-size: 25px;
+    border: 2px solid #4286f4;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.cd-main-content {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+.cd-main-content p {
+  font-size: 1.4rem;
+
+  line-height: 1.0;
+  color: #999999;
+  margin: 2em 0;
+}
+@media only screen and (min-width: 1170px) {
+  .cd-main-content {
+    padding: 3em 0;
+    margin-top: -30px;
+  }
+  .cd-main-content p {
+    font-size: 1.6rem;
+  }
+}
+
+#callout {
+  width: 180px;
+  padding: 5px 15px;
+  float: left;
+  margin: 13px 0 0 5%;
+}
+
+#middle {
+  width: 180px; /* Account for margins + border values */
+  float: left;
+  padding: 5px 15px;
+  margin: 13px 0 0 5%;
+}
+
+#sidebar {
+  width: 180px;
+  padding: 5px 15px;
+  float: left;
+  margin: 13px 0 0 5%;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    img {
+        max-width:100%;
+        height:auto !important;
+        width:100%;
+        padding:15px;
+    }
+    #full_name, #phone_number, #email {
+    display:inline !important;
+    margin: 5px;
+    font-size: 25px;}
+
+    div.left {
+        width: 110px;
+        height: 100px;
+    }
+
+    div.right{
+        width: 110px;
+        height: 100px;
+    }
+    .modal-button
+    {
+      display: inline-block;
+      height: 150px;
+      padding: 0;
+      margin: 0;
+      vertical-align: top;
+      width: 200px;
+      border: none;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    body {
+        background-color: black;
+        color: white;
+
+    }
+    img {
+        max-width:100%;
+        height:auto !important;
+        width:100%;
+        padding:15px;
+    }
+
+    #full_name, #phone_number, #email {
+    display:inline !important;
+    margin: 5px;
+    font-size: 25px;}
+
+    div.left {
+        width: 110px;
+        height: 100px;
+    }
+
+    div.right{
+        width: 110px;
+        height: 100px;
+    }
+
+    .modal-button
+    {
+      display: inline-block;
+      height: 150px;
+      padding: 0;
+      margin: 0;
+      vertical-align: top;
+      width: 200px;
+      border: none;
+    }
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    /* your mobile css, change this as you please */
+    body
+    {
+        background-color: #D3D3D3;
+        color: black
+    }
+
+    img {
+        max-width:100%;
+        height:auto !important;
+        width:100%;
+        padding:15px;
+    }
+
+    #full_name, #phone_number, #email {
+    display:inline !important;
+    margin: 5px;
+    font-size: 25px;}
+
+    div.left {
+        width: 200px;
+        height: 150px;
+    }
+
+    div.right{
+        width: 200px;
+        height: 150px;
+    }
+
+        .modal-button
+    {
+      display: inline-block;
+      height: 150px;
+      padding: 0;
+      margin: 0;
+      vertical-align: top;
+      width: 200px;
+      border: none;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    body {
+        background-color: white;
+        color: black;
+    }
+    #full_name, #phone_number, #email {
+    display:inline !important;
+    margin: 5px;
+    font-size: 25px;}
+
+    img {
+        max-width:100%;
+        height:auto !important;
+        width:100%;
+        padding:15px;
+    }
+
+    div.left {
+        width: 200px;
+        height: 150px;
+    }
+
+    div.right{
+        width: 200px;
+        height: 150px;
+    }
+
+        .modal-button
+    {
+      display: inline-block;
+      height: 150px;
+      padding: 0;
+      margin: 0;
+      vertical-align: top;
+      width: 200px;
+      border: none;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    /* your desktop css */
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    #full_name {
+        font-size: 25px;
+        display:inline !important;
+    margin: 5px;
+    }
+
+    #phone_number, #email {
+    display:inline !important;
+    margin: 5px;
+    font-size: 25px;}
+
+    img {
+        max-width:100%;
+        height:auto !important;
+        width:100%;
+        padding:15px;
+    }
+
+    div.left {
+        width: 200px;
+        height: 150px;
+    }
+
+    div.right{
+        width: 200px;
+        height: 150px;
+    }
+
+        .modal-button
+    {
+      display: inline-block;
+      height: 150px;
+      padding: 0;
+      margin: 0;
+      vertical-align: top;
+      width: 200px;
+      border: none;
+    }
+}
