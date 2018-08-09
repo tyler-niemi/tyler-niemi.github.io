@@ -1,6 +1,6 @@
 $(window).load( function ()
 {
-  $('#work').fadeIn('slow', function()
+  $('#index').fadeIn('slow', function()
   {
     $(this).fadeTo("slow", 1);
   });
