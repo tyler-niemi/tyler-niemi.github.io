@@ -1,0 +1,52 @@
+body {
+  background-color: #183316;
+}
+#game {
+  background: transparent url('https://www.clowerweb.com/cors/blackjack/table.png') 0 0 no-repeat;
+  border-radius: 5px;
+  color: #333;
+  font: 14px/17px Helvetica, Arial, Verdana, sans-serif;
+  height: 550px;
+  margin: 0 auto;
+  position: relative;
+  width: 1000px;
+}
+
+#chips {
+  position: absolute;
+  padding-top: 15px;
+  padding-left: 20px;
+  top: 15px;
+  right: 0;
+  height: 260px;
+  width: 100px;
+  border-top-left-radius: 30px;
+}
+
+#chips div {
+  display: inline-block;
+}
+
+#chips img {
+  height: 70px;
+  margin-top: 8px;
+  margin-right: 18px;
+}
+
+#chips img:hover {
+    cursor: pointer;
+}
+
+#betSquare {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  padding-top: 15px;
+  padding-left: 20px;
+  top: 15px;
+  left: 0;
+  height: 90px;
+  width: 170px;
+  border-top-left-radius: 30px;
+}

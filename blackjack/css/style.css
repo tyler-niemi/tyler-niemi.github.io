@@ -1,0 +1,255 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: black;
+}
+
+/* HEADER STYLES */
+#poker {
+    height: 150px;
+}
+h1 {
+    letter-spacing: 0.3em;
+}
+#messages h2 {
+    margin: 0;
+    padding-top: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+
+/* TABLE STYLES */
+#table {
+     background: transparent url('https://www.clowerweb.com/cors/blackjack/table.png') 0 0 no-repeat;
+  border-radius: 5px;
+  color: #333;
+  font: 14px/17px Helvetica, Arial, Verdana, sans-serif;
+  height: 550px;
+  margin: 0 auto;
+  position: relative;
+  width: 1000px;
+}
+#dealer-hand, #player-hand {
+    width: 600px;
+    height: 100px;
+    margin: auto;
+    border-style: solid; color: yellow;
+}
+
+#dealer-hand {
+    position: absolute;
+    top: 95px;
+    left: 205px;
+}
+
+#player-hand {
+    position: absolute;
+    bottom: 198px;
+    left: 205px;
+}
+
+
+#dealer-label {
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    top: 65px;
+    left: 205px;
+
+}
+
+#player-label {
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    bottom: 315px;
+    left: 205px;
+
+}
+
+
+/* BUTTON STYLES */
+.buttons {
+    position: absolute;
+    bottom: 35px;
+    left: 14%;
+
+}
+.buttons button {
+    background-color: #4679BD;
+    color:#e2eaf3;
+    top: 10px;
+    width: 170px;
+    border:10px solid #cfdcec;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    margin-top: 22px;
+    vertical-align: top;
+    height: 82px;
+    border-radius: 50%;
+     box-shadow: 0 0 3px gray;
+     padding-bottom: 47px;
+
+
+}
+.buttons button:hover {
+    opacity: 0.7;
+    transition: 1s;
+    cursor: pointer;
+}
+.buttons button:focus {
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    margin-top: 22px;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    margin-top: 22px;
+}
+
+/* CARD STYLES */
+.hand img {
+    text-align: left;
+    padding-top: 5px;
+    height: 90%;
+    margin-left: -20px;
+}
+.hand :first-child {
+    margin: 0;
+}
+
+
+/* BET STYLES */
+.betting {
+    position: absolute;
+    top: 35px;
+    left: 200px;
+    height: 180px;
+    width: 150px;
+    border-top-left-radius: 30px;
+    border-style: solid;
+    color: yellow;
+}
+.betting div {
+    display: inline-block;
+}
+
+.chips {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    margin-right: 200px;
+    height: 60px;
+    width: 100px;
+    border-top-left-radius: 30px;
+}
+.chips img {
+    height: 80px;
+    margin-top: 8px;
+    margin-right: 18px;
+}
+.chips img:hover {
+    cursor: pointer;
+}
+.bet-square {
+    float: left;
+    margin-left: 42px;
+}
+.pot-square {
+    float: right;
+    margin-right: 47px;
+}
+.bet-square{
+    font-weight: 800;
+    font-size: 23px;
+    margin-top: -8px;
+    width: 60px;
+    letter-spacing: 0.1em;
+    color: white;
+    text-transform: uppercase;
+}
+#pot, #bet {
+    margin-top: -24px;
+    margin-left: -5px;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 650px) {
+    #poker {
+        height: 120px;
+    }
+    h1 {
+        font-size: 23px
+    }
+    h2 {
+        font-size: 20px;
+    }
+    #table {
+        border-radius: 5px;
+        height: 376px;
+    }
+    #table, .buttons, .betting {
+        width: 100%;
+    }
+    #dealer-hand, #player-hand {
+        height: 75px;
+    }
+    .hand img {
+        margin-left: -15px;
+    }
+    #dealer-hand, #player-hand, #player-label, #dealer-label {
+        width: 95%;
+    }
+    #player-label, #dealer-label {
+        margin-left: 10px;
+    }
+    .buttons button {
+        margin-top: 18px;
+        font-size: 13px;
+        width: 22.5%;
+        padding: 12px 0px;
+    }
+    #doubledown {
+        padding-top: 11px;
+    }
+    .betting {
+        margin-top: 6px;
+        height: 154px;
+        border-radius: 5px;
+    }
+    .bet-square, .pot-square {
+        margin: 0;
+        float: none;
+        width: 200px;
+    }
+    .bet-square {
+        margin-top: 5px;
+    }
+    .bet-square p, .pot-square p {
+        margin: 0;
+        font-size: 20px;
+        display: inline-block;
+    }
+    #bet, #pot {
+        margin-left: 2px;
+    }
+    .betting img {
+        height: 67px;
+        margin-top: 10px;
+        margin-right: 3px;
+    }
+
+
+}
