@@ -1,228 +1,369 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-  <title>Tyler Niemi's Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/styles_test.css"/>
-        <link rel="stylesheet" type="text/css" href="css/style1.css" />
-        <link rel="stylesheet" type="text/css" href="css/navbar-fixed-side.css"/>
-        <link rel="stylesheet" href="css\modal_style.css" type="text/css">
-        <link rel="stylesheet" href="css\portfolio_buttons.css" type="text/css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="menu.js"></script>
+  <title>Tyler Niemi</title>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Personal Portfolio">
+  <meta name="author" content="Tyler Niemi">
+  <meta name="keywords" content="Personal portfolio, about, work, projects, contact">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/modal_styles.css">
+
+  <link rel="stylesheet" href="css\portfolio_buttons.css" type="text/css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Itim|Source+Sans+Pro" rel="stylesheet">
+
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
+<div id="container">
+
+  <nav id="navbar">
+    <div id="navLogo">
+      <h2 id="logo">T</h2>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="" class="index">Home</a></li>
-        <li><a href="" class="about">About</a></li>
-        <li><a href="" class="work">Portfolio</a></li>
-        <li><a href="" class="resume">Resume</a></li>
-        <li><a href="" class="contact">Contact</a></li>
+
+    <div id="navLinks">
+      <ul id="uList">
+        <li class="list"><a class="link" href="#projects">WORK</a></li>
+        <li class="list"><a class="link" href="#resumeImg">RESUME</a></li>
+        <li class="list"><a class="link" href="#aboutImg">ABOUT</a></li>
+        <li class="list"><a class="link" href="#contactImg">CONTACT</a></li>
       </ul>
     </div>
+  </nav>
+
+  <main id="main">
+    <div id="welcome-section">
+      <div id="layer">
+        <h1 id="welcomeHeadline">Hi! I'm Tyler,</h1>
+        <p id="welcomeParagraf">Junior Web Developer</p>
+      </div>
+    </div>
+
+    <div id="projects">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 id="first-child"">
+            <div class="bg top-left">
+            </div>
+
+            <table class="center">
+              <tr>
+                <td><a href="#firstModal" role="button" class="btn btn-primary" data-toggle="modal">Europe Trip</a></td>
+              </tr>
+            </table>
+
+            <!-- START MODEL -->
+            <div class="modal" id="firstModal" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-full" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Europe Trip</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+
+                <div class="modal-body" id="result">
+                  <div class="left">
+                    <img src="images/france/P1260180.jpg"><br><br><img src="images/spain/P2060409.jpg">
+                  </div>
+
+                  <div class="right">
+                    <img src="images/london/P1240009.jpg"><br><br><img src="images/scotland/P1300308.jpg">
+                  </div>
+
+                  <h3>About Project</h3>
+                  <p>In the winter of 2009 two of my cousins and I took a trip to Europe for two weeks. The places we visited were London, Scotland, France, and Spain. For this project, I wanted to gather all the photos from this amazing trip and create a Lightbox Window using JQuery that would allow visiters to view these photos.</p>
+
+                  <h3>Skills used to create the project:</h3>
+
+                  <ul id="productDesc">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                    <li>Photoshop</li>
+                  </ul>
+
+                  <input type="button" value="VIEW PROJECT" onclick="openTrips()" id="trips">
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END MODEL -->
+      </div>
+
+      <div class="col-xs-12 col-md-6">
+        <div class="bg top-right"></div>
+
+          <table class="center">
+            <tr>
+              <td><a href="#secondModal" role="button" class="btn btn-primary" data-toggle="modal">DONUT SHOP</a></td>
+            </tr>
+          </table>
+
+          <!-- START MODEL -->
+          <div class="modal" id="secondModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-full" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title">DONUT SHOP</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body p-4" id="result">
+                  <h3>About Project</h3>
+                  <p>For this project, one of my class assingments was to create a donut shop simulator.
+                  The purpose of this project was to to create three variables hours, customers per hour,
+                  and donuts made per hour and finally we were to add all the numbers from the donuts made per hour variable to get the total donuts that were made per day.</p>
+
+                  <p>The way I accomplished this was I wrote some JavaScript code to get a random number for the customers, and then I multiplied that by 2 to get the donutes per hour. </p>
+
+                  <h3>Skills used to create the project:</h3>
+
+                  <ul id="productDesc">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                  </ul>
+
+                  <input type="button" value="VIEW PROJECT" onclick="openShop()" id="trips">
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END MODEL -->
+      </div>
+
+      <div class="col-xs-12 col-md-6">
+        <div class="bg bottom-left"></div>
+
+        <table class="center">
+            <tr>
+              <td><a href="#thirdModal" role="button" class="btn btn-primary" data-toggle="modal">CHECKERS</a></td>
+            </tr>
+          </table>
+
+          <!-- START MODEL -->
+          <div class="modal" id="thirdModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-full" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title">CHECKERS</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body p-4" id="result">
+                  <p>Checkers is a board game that involves two players (one takes the dark pieces, the other takes the light pieces). The dark player always has the first turn. The players take turns moving pieces forward and diagonally one spot and can "capture" opponents by jumping over them diagonally. If a player captures another player's piece and lands in a spot where another capturing move is available, this capturing move must be performed. If a player's piece makes it to the opposing player's side of the board, this piece is "kinged" and is allowed to move backwards diagonally one spot.</p>
+
+                  <h3>Skills used to create the project:</h3>
+
+                  <ul id="productDesc">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                  </ul>
+
+                  <input type="button" value="VIEW PROJECT" onclick="openCheckers()" id="trips">
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END MODEL -->
+      </div>
+
+      <div class="col-xs-12 col-md-6">
+        <div class="bg bottom-right"></div>
+        <table class="center">
+            <tr>
+              <td><a href="#fourthModal" role="button" class="btn btn-primary" data-toggle="modal">BLACKJACK</a></td>
+            </tr>
+          </table>
+
+          <!-- START MODEL -->
+          <div class="modal" id="fourthModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-full" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title">BLACKJACK</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body p-4" id="result">
+                  <h3>About Project</h3>
+                  <p>This is a basic, all client-side Blackjack application built with HTML, CSS, JavaScript and jQuery. The app lets you play unlimited hands of the classic card game.</p>
+
+                  <h3>Functionality Used</h3>
+
+                  <ul id="productDesc">
+                    <li>Function declaration</li>
+                    <li>Call backs</li>
+                    <li>Variable setting</li>
+                    <li>Scope control</li>
+                    <li>DOM manipulation</li>
+                    <li>Event listener</li>
+                    <li>Conditional events</li>
+                  </ul>
+
+                  <input type="button" value="VIEW PROJECT" onclick="openBlackJack()" id="trips">
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END MODEL -->
+      </div>
+    </div>
   </div>
-</nav>
-<article id="index">
-  <ul class="cb-slideshow">
-    <li><span>Image 01</span></li>
-    <li><span>Image 02</span></li>
-    <li><span>Image 03</span></li>
-    <li><span>Image 04</span></li>
-    <li><span>Image 05</span></li>
-    <li><span>Image 06</span></li>
-  </ul>
-</article>
-<article id="about">
-  <div class="content">
-    <h3>About Me</h3>
-    <div class="right"><img src="images/about.jpg"></div>
-    <p>Computer Science student with 5 years experience in content management using multiple tools to ensure that web content and functionality were working as desired. Looking to obtain an entry level position in Web Decvelopment with an organization where my IT skills and great work ethic will be an asset to an established team.</p>
-  </div>
-</article>
-
-<article id="resume">
-  <div class="content">
-    <h3>Resume</h3>
-    <p>Computer Science student with 5 years experience in content management using multiple tools to ensure that web content and functionality were working as desired. Looking to obtain an entry level position in Web Decvelopment with an organization where my IT skills and great work ethic will be an asset to an established team</p>
-
-    <h3>Technical Training</h3>
-    <table id="training">
-     <tr>
-      <td><li>SQL Server 2000</li></td>
-      <td><li>SEO</li></td>
-      <td><li>Digital Imaging</li></td>
-    </tr>
-
-    <tr>
-      <td><li>HTML & HTML 5</li></td>
-      <td><li>Web Design</li></td>
-      <td><li>C#.Net</li></td>
-    </tr>
-
-    <tr>
-      <td><li>Data Analysis</li></td>
-      <td><li>Dreamweaver</li></td>
-      <td><li>Data Theory And Design</li></td>
-    </tr>
-
-    <tr>
-      <td><li>JavaScript</li></td>
-      <td><li>Software Testing</li></td>
-      <td><li>Technical Writing</li></td>
-    </tr>
-
-    <tr>
-      <td><li>Frontpage</li></td>
-      <td><li>Site Trafficking</li></td>
-      <td><li>Abode Flah</li></td>
-    </tr>
-
-    <tr>
-      <td><li>SQL Server 2014</li></td>
-      <td><li>Ruby On Rails</li></td>
-      <td><li>Adobe Flash</li></td>
-    </tr>
-
-    <tr>
-      <td><li>CSS</li></td>
-      <td><li>JQuery</li></td>
-      <td><li>Tableau</li></td>
-    </tr>
-  </table>
-
-  <h2>Professional Experience</h2>
-  <h3>Content Manager</h3>
-  <p class="alignleft"><i>FaithNetwork, Bellevue Washington</i></p>
-    <p class="alignright">(January 11th, 2011 - Current)</p>
-    <ul>
-      <li>Ultilized Content Management System to create and update websites using HTML and CSS</li>
-      <li>Creating and Managing Google Analytic Accounts for over 300 websites</li>
-      <li>Monitored IE8-10, Chrome, Safari, and Firefox to ensure links and content were working correctly</li>
-      <li>Edited images when neccesary using Adobe Photoshop</li>
-    </ul>
-    <h3>Material Handeler</h3>
-  <p class="alignleft"><i>Federal Express, Seatac Washington</i></p>
-    <p class="alignright">March, 23rd 2016 - Current</p>
-    <h3>Web Designer</h3>
-  <p class="alignleft"><i>Hobart Machined Products, Hobart Washington</i></p>
-    <p class="alignright">March 2008 - August 2016</p>
-    <ul>
-      <li>Created expansion pages using HTML and CSS in Microsoft Frontpage/li>
-      <li>Updated photos and text content</li>
-      <li>Tested webpages for errors and broken links and repaired them as needed</li>
-    </ul>
-  </div>
-   </article>
-   <article id="work">
-    <div class="content">
-    <h1 id="portfolio">Portfolio</h1>
-    <p id="desc">Click on the image to see the project description.</p>
-
-    <!-- Trigger/Open The Modal -->
-<div id="shop">
-    <button class="modal-button">
-        <img src="images/scotland/P1290255.JPG"/>
-        <a href="#myModal1">Europe Trip</a>
-    </button>
-    <button class="modal-button">
-        <img src="images/donut.jpg"/>
-        <a href="#myModal2">Donut Shop</a>
-    </button>
 </div>
 
-<!-- The Modal -->
-<div id="myModal1" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">×</span>
-      <h2>Europe Trip</h2>
+    <div id="resumeImg" class="divHeadline">
+      <h1 class="headline1">Resume</h1>
     </div>
-    <div class="modal-body">
-      <div class="left"> <img src="https://tyler-niemi.github.io/images/scotland/P1290255.JPG"><br><br><img src="images/spain/P2060409.JPG"></div>
-     <div class="right"><img src="images/london/P1240009.jpg"><br><br><img src="images/scotland/P1300308.JPG"></div>
 
-     <h3>About Project</h3>
-     <p>In the winter of 2009 two of my cousins and I took a trip to Europe for two weeks. The places we visited were London, Scotland, France, and Spain. For this project, I wanted to gather all the photos from this amazing trip and create a Lightbox Window using JQuery that would allow visiters to view these photos.
+    <div id="resume">
+      <div class="w3-bar w3-black">
+        <button class="button1" onclick="openCity('techtraining')">Technical Training</button>
+        <button class="button2" onclick="openCity('experience')">Technical Experience</button>
+      </div>
 
-     <h3>Skills used to create the project:</h3>
+      <div id="techtraining" class="w3-container city">
+        <h3 id="techtraining">Technical Training</h3>
+        <table id="training">
+          <tr>
+            <td><li>SQL Server 2000</li></td>
+            <td><li>SEO</li></td>
+            <td><li>Digital Imaging</li></td>
+          </tr>
 
-      <ul id="productDesc">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>JQuery</li>
-        <li>Photoshop</li>
-      </ul>
-      <input type="button" value="VIEW PROJECT" onclick="openTrips()" id="trips">
+          <tr>
+            <td><li>HTML & HTML 5</li></td>
+            <td><li>Web Design</li></td>
+            <td><li>C#.Net</li></td>
+          </tr>
 
+          <tr>
+            <td><li>Data Analysis</li></td>
+            <td><li>Dreamweaver</li></td>
+            <td><li>Data Theory And Design</li></td>
+          </tr>
+
+          <tr>
+            <td><li>JavaScript</li></td>
+            <td><li>Software Testing</li></td>
+            <td><li>Technical Writing</li></td>
+          </tr>
+
+          <tr>
+            <td><li>Frontpage</li></td>
+            <td><li>Site Trafficking</li></td>
+            <td><li>Abode Flah</li></td>
+          </tr>
+
+          <tr>
+            <td><li>SQL Server 2014</li></td>
+            <td><li>Ruby On Rails</li></td>
+            <td><li>Adobe Flash</li></td>
+          </tr>
+
+          <tr>
+            <td><li>CSS</li></td>
+            <td><li>JQuery</li></td>
+            <td><li>Tableau</li></td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="experience" class="w3-container city" style="display:none">
+
+        <h3>Content Manager</h3>
+        <p class="text"><i>FaithNetwork, Bellevue Washington</i></p>
+        <p class="text">(January 11th, 2011 - Current)</p>
+        <ul id="training">
+          <li>Ultilized Content Management System to create and update websites using HTML and CSS</li>
+          <li>Creating and Managing Google Analytic Accounts for over 300 websites</li>
+          <li>Monitored IE8-10, Chrome, Safari, and Firefox to ensure links and content were working correctly</li>
+          <li>Edited images when neccesary using Adobe Photoshop</li>
+        </ul>
+
+        <h3>Web Designer</h3>
+        <p class="text"><i>Hobart Machined Products, Hobart Washington</i></p>
+        <p class="text">March 2008 - August 2016</p>
+        <ul id="training">
+          <li>Created expansion pages using HTML and CSS in Microsoft Frontpage/li>
+          <li>Updated photos and text content</li>
+          <li>Tested webpages for errors and broken links and repaired them as needed</li>
+        </ul>
+      </div>
+     </div>
+
+    <div id="aboutImg" class="divHeadline">
+      <h1 class="headline1">ABOUT ME</h1>
     </div>
-  </div>
 
+    <div id="about">
+      <p class="text">Computer Science student with 5 years experience in content management using multiple tools to ensure that web content and functionality were working as desired. Looking to obtain an entry level position in Web Decvelopment with an organization where my IT skills and great work ethic will be an asset to an established team.</p>
+    </div>
+
+    <div id="contactImg" class="divHeadline">
+      <p><small>DO YOU WANT TO KNOW MORE ABOUT ME OR MY CODING JOURNEY?</small></p>
+      <h1 class="headline1">CONTACT ME</h1>
+    </div>
+
+    <div id="contact">
+      <a class="fa fa-linkedin" href="https://www.linkedin.com/in/tyler-niemi-19093618" target="_blank"></a>
+      <a class="fa fa-codepen" href="https://codepen.io/tylerniemi/" target="_blank"></a>
+      <a class="fa fa-github" id="profile-link" href="https://github.com/tyler-niemi" target="_blank"></a>
+    </div>
+
+  </main>
+
+  <footer id="footer">
+    <p><small>&copy; 2019. Developed by: Tyler Niemi</small></p>
+  </footer>
+
+  <script>
+  function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "block";
+  }
+  </script>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js\modal_window.js"></script>
+<script type="text/javascript" src="js\openproject.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
-<!-- Trigger/Open The Modal -->
+</body>
 
-
-<!-- The Modal -->
-<div id="myModal2" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">×</span>
-      <h2>Donut Shop</h2>
-    </div>
-    <div class="modal-body">
-      <h3>About Project</h3>
-     <p>For this project, one of my class assingments was to create a donut shop simulator.
-      The purpose of this project was to to create three variables hours, customers per hour,
-      and donuts made per hour and finally we were to add all the numbers from the donuts made per hour variable to get the total donuts that were made per day.</p>
-
-      <p>The way I accomplished this was I wrote some JavaScript code to get a random number for the customers, and then I multiplied that by 2 to get the donutes per hour. </p>
-      <h3>Skills used to create the project:</h3>
-      <ul id="productDesc">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>JQuery</li>
-      </ul>
-      <input type="button" value="VIEW PROJECT" onclick="openShop()" id="trips">
-    </div>
-    </div>
-  </div>
-
-</div>
-</article>
-       <article id="contact">
-        <div class="content">
-      <h3>Contact Me</h3>
-      <h4 id="full_name">Name :</h4> Tyler Niemi<br>
-                    <h4 id="phone_number">Number :</h4> 206-228-8335<br>
-                    <h4 id="email">Email :</h4> <a href="mailto: tylerniemi@hotmail.com">tylerniemi@hotmail.com</a>
-    </div>
-    </article>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript" src="js\modal_window.js"></script>
-  <script type="text/javascript" src="js\span_content.js"></script>
-  </body>
 </html>
